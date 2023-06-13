@@ -14,27 +14,27 @@ const Banner = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/bannerSatc.jpeg"
+          src="images/bannerSatc.jpeg"
           alt="First slide"
-          style={{maxHeight: '100%', height: "100px", maxWidth: '100%', objectFit: 'cover'}}
+          style={{maxHeight: '200%', height: "200px", maxWidth: '200%', objectFit: 'cover'}}
         />
       </Carousel.Item>
 
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/bannerSatc.jpeg"
+          src="images/hometest.jpg"
           alt="First slide"
-          style={{ maxHeight: '100%', height: "100px", maxWidth: '100%', objectFit: 'cover' }}
+          style={{ maxHeight: '200%', height: "200px", maxWidth: '200%', objectFit: 'cover' }}
         />
       </Carousel.Item>
 
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="/bannerSatc.jpeg"
+          src="image/hometest3.png"
           alt="First slide"
-          style={{ maxHeight: '100%', height: "100px", maxWidth: '100%', objectFit: 'cover' }}
+          style={{ maxHeight: '100%', height: "200px", maxWidth: '100%', objectFit: 'cover' }}
         />
       </Carousel.Item>
     </Carousel>
