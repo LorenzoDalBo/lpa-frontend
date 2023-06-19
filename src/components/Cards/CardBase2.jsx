@@ -11,7 +11,7 @@ export default function Card2 () {
           Projeto feito pela engenharia de software
         </Card.Text>
         <Button className="bg-bluesatc3 mt-2" variant="primary">
-            <a href='http://localhost:3000/Projectspage2'>Projetos</a>
+            <a href='http://localhost:3000/projectsPage'>Projetos</a>
         </Button>
       </Card.Body>
     </Card>

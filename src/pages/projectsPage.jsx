@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Button from '@/components/Cards/Botão';
-import Card1 from '@/components/Cards/Card1';
+import Card2 from '@/components/Cards/CardBase2';
 
 export default function ProjectsPage () {
 
@@ -23,16 +23,18 @@ export default function ProjectsPage () {
 
 
   return (
-    <div className='gap-5'>
+    <main className='bg-gray2'>
+        <div className='gap-5'>
       <div className='flex justify-center'>
-      <Button onClick={handleButtonClick} />
-      </div>
-     <div className='grid grid-cols-3 gap-4'>
-      {showCards.map(Card => (
-        <Card1 key={Card.id} />
-      ))}
+        <Button onClick={handleButtonClick} />
+        </div>
+      <div className='grid grid-cols-3 gap-4 mt-8 p-4 justify-items-center'>
+        {showCards.map(Card => (
+          <Card2 key={Card.id} />
+        ))}
      
-     </div>
       </div>
+        </div>
+    </main>
   )
 }   

@@ -58,7 +58,7 @@ export default function Home() {
       <h1 className="text-center justify-center items-center text-2xl font-inter text-bluesatc1 mt-24">
         <strong>Conheça nossos projetos</strong>
       </h1>
-    <div className="flex justify-around h-fit mt-16 p-3" >
+    <div className="flex justify-around h-fit mt-16 p-4" >
        <Card2/>
        <Card2/> 
        <Card2/>
