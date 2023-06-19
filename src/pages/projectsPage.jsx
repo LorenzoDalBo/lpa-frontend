@@ -1,32 +1,39 @@
-import FormProjects from '@/components/Form.jsx/formProjects'
-import React from 'react'
-import { Card, CardGroup, Container, Row } from 'react-bootstrap'
-import CardBase from "@/components/Cards/CardBase";
+import React, { useState } from 'react';
+import Button from '@/components/Cards/Botão';
+import Card from '@/components/Cards/Card';
 
-const ProjectsPage = () => {
+export default function ProjectsPage () {
 
+  const [showCards, setShowCards] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const fetchMoreCards = async () => {
+    setIsLoading(true);
+   
+    await new Promise(resolve => setTimeout(resolve));
   
-  return (
-     <Container>
-      <main className='h-fit bg-gray-500'>
-        <Row>
-          <div className='flex-col justify-center items-center gap-6 mt-4'>
-              <div className='flex gap-3'>
-                <FormProjects />
-                <FormProjects />
-                <FormProjects />
-                <FormProjects />  
-                </div>   
-                <div className='flex gap-3'>
-                <CardBase/>
-                <CardBase/>
-                <CardBase/>   
-                </div>     
-            </div>
-           </Row>
-           </main>
-      </Container>
-  )
-}
+    const newCard = { id: Date.now() };
+    setShowCards(prevCards => [...prevCards, newCard]);
+    setIsLoading(false);
+  };
 
-export default ProjectsPage
+  const handleButtonClick = () => {
+    fetchMoreCards();
+  }; 
+
+
+  return (
+    <div className='gap-5'>
+      <div className='flex justify-center'>
+      <Button onClick={handleButtonClick} />
+      </div>
+     <div className='grid grid-cols-3 gap-4'>
+      {showCards.map(card => (
+        <Card key={card.id} />
+      ))}
+     
+     </div>
+      </div>
+  )
+}   
+   
