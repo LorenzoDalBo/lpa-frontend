@@ -11,6 +11,15 @@ module.exports = {
       'bluesatc2': '#0044a2',
       'bluesatc3': '#035bbf',
       'bluesatc4': '#0070e0',
+      'gray': '#6b7280',
+      'gray2': '#d1d5db',
+      'green' : '#86efac',
+      'greensatc' : '#166534',
+      'greensatc2': '#16a34a',
+      'greensatc3': '#15803d',
+      'lime' : '#65a30d',
+      'lime2' : '#a3e635',
+      'red' : '#dc2626',
     extend: {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],

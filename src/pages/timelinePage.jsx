@@ -1,3 +1,4 @@
+import Adicionar from "@/components/Timeline/evento";
 import TimelineItem from "@/components/Timeline/timelineItem";
 import React from "react";
 import {
@@ -15,10 +16,10 @@ import "react-vertical-timeline-component/style.min.css";
 
 const TimelinePage = () => {
   return (
-    <main>
+    <main className="bg-gray2">
       <Container className="bg-slate-200" fluid>
         <Row>
-          <Form className="flex border-t-2 border-solid border-blue-600 justify-center p-3">
+          <Form className="flex border-t-2 border-solid border-bluesatc3 justify-center p-3">
             <InputGroup className="w-1/3">
               <DropdownButton
                 variant="outline-secondary"
@@ -35,11 +36,13 @@ const TimelinePage = () => {
               ></Form.Control>
             </InputGroup>
           </Form>
-
-          <Button>Adicionar Projeto</Button>
+          <div className="flex justify-center gap-5 mt-8">
+            <Button className="bg-bluesatc1" onClick={Adicionar}>Adicionar Projeto</Button>
+            <Button className="bg-red ">Remover Projeto</Button>
+          </div>
         </Row>
         <Row>
-          <VerticalTimeline>
+          <VerticalTimeline className="mt-3">
             <TimelineItem />
             <TimelineItem />
             <TimelineItem />
