@@ -1,5 +1,5 @@
 import TimelineItem from "@/components/Timeline/timelineItem";
-import React from "react";
+import React, { useState } from "react";
 import {
   Button,
   Col,
@@ -14,6 +14,16 @@ import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
 const TimelinePage = () => {
+
+  const [timelineElements, setTimelineElements] = useState([]);
+
+  const handleAddElement = () => {
+    setTimelineElements((prevElements) => [
+      ...prevElements,
+      <TimelineItem key={prevElements.length} />,
+    ]);
+  };
+
   return (
     <main>
       <Container className="bg-slate-200" fluid>
@@ -35,14 +45,18 @@ const TimelinePage = () => {
               ></Form.Control>
             </InputGroup>
           </Form>
-
-          <Button>Adicionar Projeto</Button>
+          <div className="flex justify-center gap-5 mt-8">
+            <div>
+              <Button className="bg-bluesatc1" onClick={handleAddElement}>Adicionar Projeto</Button>   
+            </div>
+            <Button className="bg-red ">Remover Projeto</Button>
+          </div>
         </Row>
         <Row>
           <VerticalTimeline>
-            <TimelineItem />
-            <TimelineItem />
-            <TimelineItem />
+          <div className="timeline">
+            {timelineElements.map((element) => element)}
+             </div>
           </VerticalTimeline>
         </Row>
       </Container>

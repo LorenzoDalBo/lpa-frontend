@@ -23,11 +23,11 @@ export default function ProjectsPage () {
 
 
   return (
-    <div className='gap-5'>
-      <div className='flex justify-center'>
+    <div>
+      <div className='flex'>
       <Button onClick={handleButtonClick} />
       </div>
-     <div className='grid grid-cols-3 gap-4'>
+     <div>
       {showCards.map(card => (
         <Card key={card.id} />
       ))}
