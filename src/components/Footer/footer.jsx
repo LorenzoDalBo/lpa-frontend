@@ -2,11 +2,9 @@ import React from 'react'
 
 export default function Footer () {
   return (
-    <div>
-        <footer className='h-[150px] flex gap-7'>
-            <img src="images/bannerSatc"></img>
-        </footer>
-    </div>
+    <footer className='bg-white h-fit w-screen flex justify-center items-center gap-40'>
+      <img className='h-20' src="images/bannerSatc.jpeg"></img>
+      <img className='h-28' src= "images/LogoSoftware.jfif"></img>
+    </footer> 
   )
 }
-

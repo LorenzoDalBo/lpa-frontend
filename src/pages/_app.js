@@ -13,9 +13,7 @@ export default function App({ Component, pageProps }) {
         <Banner />
         </div>
         <Component {...pageProps} />
-        <div>
-       
-        </div>
+        <Footer />
       </div>
     </>
   );
