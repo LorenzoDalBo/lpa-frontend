@@ -1,9 +1,8 @@
+import Modal from "@/components/modal";
 import React, {useState} from "react";
-import Adicionar from "@/components/Timeline/Adicionar";
 import TimelineItem from "@/components/Timeline/timelineItem";
 import {
   Button,
-  Col,
   Container,
   Dropdown,
   DropdownButton,
@@ -14,10 +13,14 @@ import {
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-const TimelinePage = () => {
+export default function TimelinePage () {
+  
+  const [openModal, setOpenModal] = useState(false)
   const [timelineElements, setTimelineElements] = useState([]);
+  
 
-  const handleAddElement = () => {
+  function handleAddElement () {
+    setOpenModal (true)
     setTimelineElements((prevElements) => [
       ...prevElements,
       <TimelineItem key={prevElements.length} />,
@@ -44,10 +47,12 @@ const TimelinePage = () => {
               ></Form.Control>
             </InputGroup>
           </Form>
+          
           <div className="flex justify-center gap-5 mt-8">
             <Button className="bg-bluesatc1" onClick={handleAddElement}>Adicionar Projeto</Button>
             <Button className="bg-red ">Remover Projeto</Button>
           </div>
+          <Modal isOpen={openModal}/>
         </Row>
         <Row>
           <VerticalTimeline className="mt-3">
@@ -60,5 +65,3 @@ const TimelinePage = () => {
     </main>
   );
 };
-
-export default TimelinePage;
