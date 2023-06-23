@@ -50,9 +50,11 @@ export default function TimelinePage () {
           
           <div className="flex justify-center gap-5 mt-8">
             <Button className="bg-bluesatc1" onClick={handleAddElement}>Adicionar Projeto</Button>
-            <Button className="bg-red ">Remover Projeto</Button>
+            <Button className="bg-red ">Remover Projeto</Button> 
           </div>
+          <div>
           <Modal isOpen={openModal}/>
+          </div>  
         </Row>
         <Row>
           <VerticalTimeline className="mt-3">
