@@ -1,4 +1,4 @@
-import Modal from "@/components/modal";
+import Modal from "@/components/Timeline/Modal";
 import React, {useState} from "react";
 import TimelineItem from "@/components/Timeline/timelineItem";
 import {
@@ -27,7 +27,7 @@ export default function TimelinePage () {
     ]);
   };
   return (
-    <main className="bg-gray2 h-fit w-screen">
+    <main className="bg-zinco3 h-fit w-screen">
       <Container className="bg-slate-200" fluid>
         <Row>
           <Form className="flex border-t-2 border-solid border-bluesatc3 justify-center p-3">

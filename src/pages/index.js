@@ -2,7 +2,7 @@ import Card2 from "@/components/Cards/CardBase2";
 
 export default function Home() {
   return (
-    <main className="bg-gray2 h-fit">
+    <main className="bg-zinco3 h-fit">
         <div className="mt-0 p-1 text-center">
           <h1 className="mt-4 text-2xl font-inter text-bluesatc1">
             <strong>
