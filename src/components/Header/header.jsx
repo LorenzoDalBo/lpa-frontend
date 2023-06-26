@@ -8,7 +8,7 @@ const Header = () => {
   
   return (
     <header className='flex p-4 bg-bluesatc1 justify-around'>
-        <h1 className='text-4xl items-start'><a href='http://localhost:3000/'><strong>LAB TECH</strong></a></h1>
+        <h1 className='text-4xl items-start'><a href='http://localhost:3000/'><strong>LABTEC</strong></a></h1>
         <HeaderNavbar/>
     </header>
   )

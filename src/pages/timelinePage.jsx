@@ -18,7 +18,6 @@ export default function TimelinePage () {
   const [openModal, setOpenModal] = useState(false)
   const [timelineElements, setTimelineElements] = useState([]);
   
-
   function handleAddElement () {
     setOpenModal (true)
     setTimelineElements((prevElements) => [
@@ -47,13 +46,12 @@ export default function TimelinePage () {
               ></Form.Control>
             </InputGroup>
           </Form>
-          
           <div className="flex justify-center gap-5 mt-8">
             <Button className="bg-bluesatc1" onClick={handleAddElement}>Adicionar Projeto</Button>
             <Button className="bg-red ">Remover Projeto</Button> 
           </div>
           <div>
-          <Modal isOpen={openModal}/>
+          <Modal isOpen={openModal} setModalClosed={() => setOpenModal(!openModal)}/> 
           </div>  
         </Row>
         <Row>
