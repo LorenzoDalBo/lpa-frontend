@@ -1,20 +1,14 @@
 import React, {useState} from "react";
 import Adicionar from "@/components/Timeline/Adicionar";
 import TimelineItem from "@/components/Timeline/timelineItem";
-import {
-  Button,
-  Col,
-  Container,
-  Dropdown,
-  DropdownButton,
-  Form,
-  InputGroup,
-  Row,
-} from "react-bootstrap";
+import {Button, Container, Dropdown, DropdownButton, Form, InputGroup, Row} from "react-bootstrap";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
 const TimelinePage = () => {
+
+  const [cidadeFiltrada, setCidadeFiltrada] = useState('');
+
   const [timelineElements, setTimelineElements] = useState([]);
 
   const handleAddElement = () => {
@@ -23,6 +17,9 @@ const TimelinePage = () => {
       <TimelineItem key={prevElements.length} />,
     ]);
   };
+
+
+
   return (
     <main className="bg-gray2 h-fit w-screen">
       <Container className="bg-slate-200" fluid>
