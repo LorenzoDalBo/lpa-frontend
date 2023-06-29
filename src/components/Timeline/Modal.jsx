@@ -4,7 +4,7 @@ export default function Modal({ isOpen, setModalClosed }) {
     return (
       <div className="flex justify-center items-center">
         <div
-          className={`bg-gray bg-opacity-90 h-fit w-[1000px] fixed p-3
+          className={`bg-gray bg-opacity-100 h-fit w-[1000px] fixed p-3
              rounded-xl z-[1000] flex justify-center items-center`}
         >
           <div>

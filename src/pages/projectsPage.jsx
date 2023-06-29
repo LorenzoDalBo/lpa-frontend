@@ -23,7 +23,7 @@ export default function ProjectsPage () {
 
 
   return (
-    <main className='bg-zinco3'>
+    <main className='bg-white'>
         <div className='gap-5'>
       <div className='flex justify-center'>
         <Button onClick={handleButtonClick} />

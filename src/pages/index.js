@@ -3,7 +3,7 @@ import IframePage from "@/components/Incorporação/inc";
 
 export default function Home() {
   return (
-    <main className="bg-zinco3 h-fit">
+    <main className="bg-white h-fit">
       <div className="mt-0 p-1 text-center">
         <h1 className="mt-4 text-2xl font-inter text-bluesatc1">
           <strong>
@@ -36,7 +36,7 @@ export default function Home() {
       <div className="pl-8 flex gap-2">
         <div className=" p-3 d-flex ml-3 mt-10 w-100 h-72">
           <img
-            className="h-[250px] w-[250px] rounded-xl"
+            className="h-[250px] w-[250px] rounded-xl shadow-2xl"
             src="/images/hometest.jpg"
           ></img>
           <p className="pl-4 w-50 ml-2 font-inter text-justify text-bluesatc2">
@@ -48,7 +48,7 @@ export default function Home() {
         </div>
         <div className="p-3 d-flex mt-10 w-100 h-72">
           <img
-            className="h-[250px] w-[250px] rounded-xl"
+            className="h-[250px] w-[250px] rounded-xl shadow-2xl"
             src="/images/hometest3.png"
           ></img>
           <p className="pl-4 w-50 ml-2 text-justify font-inter text-bluesatc2">
