@@ -21,21 +21,23 @@ const Card2 = ({ newsItem }) => {
   return (
     <main>
     <div>
-      <Card className="w-[18rem] h-[520px] bg-bluesatc1">
+      <Card className="w-[18rem] h-[480px] shadow-lg p-3 mb-5 bg-white rounded">
         <Card.Img variant="top" src="images/hometest2.png" />
         <Card.Body>
           <div>
-          <Card.Title className="text-gray2 text-truncate" title={titulo}>
+          <Card.Title className="text-black text-truncate" title={titulo}>
             {titulo}
           </Card.Title>
           </div>
-          <p className="text-gray2">Academico: {academico}</p>
-          <p className="text-gray2 mt-2 gap-2">Orientador: {orientador}</p>
-          <div className="text-gray2">
+          <p className="text-black text-truncate">Academico: {academico}</p>
+          <p className="text-black mt-2 gap-2 text-truncate">Orientador: {orientador}</p>
+          <div className="text-black">
+          <div className="flex mt-2">Ano: {data}</div>
+              <div className='flex justify-center'>
               <Button className="bg-bluesatc3 mt-2 flex" variant="primary" onClick={toggleModal}>
                 Leia mais
               </Button>
-              <div className="flex mt-3">Ano: {data}</div> 
+              </div> 
           </div>
         </Card.Body>
       </Card>
@@ -45,12 +47,18 @@ const Card2 = ({ newsItem }) => {
           <Modal.Title className="text-black">{titulo}</Modal.Title>
         </Modal.Header>
         <Modal.Body className="text-black">
-          {descricao}
+          <div>
+          <div> {descricao}</div>
+          <div className='font-bold'>Academico: {academico}</div>
+          <div className='font-bold'>Orientador: {orientador}</div>
+          </div> 
         </Modal.Body>
         <Modal.Footer>
+          
           <Button className="text-black" variant="secondary" onClick={toggleModal}>
             Fechar
           </Button>
+          
         </Modal.Footer>
       </Modal>
       </div>
