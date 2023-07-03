@@ -7,8 +7,6 @@ const Card2 = ({ newsItem }) => {
   const { titulo, descricao, academico, orientador, data } = newsItem || {}; 
   const [showModal, setShowModal] = useState(false);
 
-
-
   const toggleModal = () => {
     setShowModal(!showModal);
   };
@@ -21,7 +19,7 @@ const Card2 = ({ newsItem }) => {
   return (
     <main>
     <div>
-      <Card className="w-[18rem] h-[480px] shadow-lg p-3 mb-5 bg-white rounded">
+      <Card className="w-[18rem] h-[480px] shadow-xl p-3 mb-5 shadow-bluesatc1 rounded">
         <Card.Img variant="top" src="images/hometest2.png" />
         <Card.Body>
           <div>

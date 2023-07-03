@@ -31,7 +31,7 @@ export default function ProjectsPage() {
 
   return (
     <main className="bg-white">
-      <Form className="flex border-t-2 border-solid border-bluesatc3 justify-center p-2">
+      <Form className="flex justify-center p-2">
         <InputGroup className="w-1/3 center justify-center">
           <DropdownButton
             variant="outline-secondary"
