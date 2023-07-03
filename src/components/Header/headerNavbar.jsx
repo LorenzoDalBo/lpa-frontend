@@ -9,6 +9,7 @@ const HeaderNavbar = () => {
             <Link className='font-inter text-white' href="/aboutPage">Sobre</Link>
             <Link className='font-inter text-white' href="/timelinePage">Timeline</Link>
             <Link className='font-inter text-white' href="/projectsPage">Projetos</Link>
+            <Link className='font-inter text-white' href="/LoginPage">Login</Link>
         </ul>
     </nav>
   )

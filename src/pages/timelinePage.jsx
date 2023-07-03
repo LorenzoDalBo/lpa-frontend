@@ -1,4 +1,4 @@
-import Modal from "@/components/Timeline/Modal";
+import Modal from "@/components/Projetos/Modal";
 import React, {useState} from "react";
 import TimelineItem from "@/components/Timeline/timelineItem";
 import {
@@ -15,11 +15,11 @@ import "react-vertical-timeline-component/style.min.css";
 
 export default function TimelinePage () {
   
-  const [openModal, setOpenModal] = useState(false)
+  {/*const [openModal, setOpenModal] = useState(false) COMENTÁRIO JSX */}
   const [timelineElements, setTimelineElements] = useState([]);
   
   function handleAddElement () {
-    setOpenModal (true)
+   {/*  setOpenModal (true)COMENTÁRIO JSX */}
     setTimelineElements((prevElements) => [
       ...prevElements,
       <TimelineItem key={prevElements.length} />,
@@ -46,20 +46,24 @@ export default function TimelinePage () {
               ></Form.Control>
             </InputGroup>
           </Form>
-          <div className="flex justify-center gap-5 mt-8">
+          {/* <div className="flex justify-center gap-5 mt-8">
             <Button className="bg-bluesatc1" onClick={handleAddElement}>Adicionar Projeto</Button>
             <Button className="bg-red ">Remover Projeto</Button> 
           </div>
           <div>
           <Modal isOpen={openModal} setModalClosed={() => setOpenModal(!openModal)}/> 
-          </div>  
+          </div>COMENTÁRIO JSX */}  
         </Row>
         <Row>
-          <VerticalTimeline className="mt-3">
+          <VerticalTimeline className="mt-3 line-black">
           <div className="timeline">
             {timelineElements.map((element) => element)}
+            <TimelineItem/>
+            <TimelineItem/>
+            <TimelineItem/>
           </div>
           </VerticalTimeline>
+          
         </Row>
       </Container>
     </main>

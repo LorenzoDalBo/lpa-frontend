@@ -1,4 +1,4 @@
-import Card2 from "@/components/Cards/CardBase2";
+import CardBaseHome from "@/components/Cards/CardBaseHome";
 import IframePage from "@/components/Incorporação/inc";
 
 export default function Home() {
@@ -39,7 +39,7 @@ export default function Home() {
             className="h-[250px] w-[250px] rounded-xl shadow-2xl"
             src="/images/hometest.jpg"
           ></img>
-          <p className="pl-4 w-50 ml-2 font-inter text-justify text-bluesatc2">
+          <p className="pl-4 w-50 ml-2 font-inter text-justify text-bluesatc2 text-lg">
             A linha do tempo permite que seja visualizado todas as atividades
             que envolvem o curso de engenharia de Software. Para cada evento
             podemos ter detalhes como fotos, vídeos e anexos dos eventos
@@ -51,7 +51,7 @@ export default function Home() {
             className="h-[250px] w-[250px] rounded-xl shadow-2xl"
             src="/images/hometest3.png"
           ></img>
-          <p className="pl-4 w-50 ml-2 text-justify font-inter text-bluesatc2">
+          <p className="pl-4 w-50 ml-2 text-justify font-inter text-bluesatc2 text-lg">
             O Laboratório possui dois objetivos: acelerar o processo de
             colocação dos acadêmicos no mercado, buscando desenvolver projetos
             que resolvam problemas reais e, subsidiar as empresas por meio de
@@ -63,10 +63,10 @@ export default function Home() {
       <h1 className="text-center justify-center items-center text-2xl font-inter text-bluesatc1 mt-24">
         <strong>Conheça nossos principais projetos</strong>
       </h1>
-      <div className="flex justify-around h-fit mt-16 p-4">
-        <Card2 />
-        <Card2 />
-        <Card2 />
+      <div className="flex justify-around h-fit mt-16 p-6">
+        <CardBaseHome />
+        <CardBaseHome />
+        <CardBaseHome />
       </div>
     </main>
   );

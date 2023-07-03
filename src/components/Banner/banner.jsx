@@ -10,34 +10,36 @@ const Banner = () => {
   }
 
   return (
-    <Carousel className="border-t-2 border-solid border-blue-600" style={{ width: "30vw"}} activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="images/bannerSatc.jpeg"
-          alt="First slide"
+    <main className="bg-gray">
+      <Carousel className="border-t-2 border-solid border-blue-600" style={{ width: "30vw"}} activeIndex={index} onSelect={handleSelect}>
+        <Carousel.Item>
+          <img
+           className="d-block w-100"
+            src="images/bannerSatc.jpeg"
+            alt="First slide"
           
-        />
-      </Carousel.Item>
+          />
+        </Carousel.Item>
 
       <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="images/bannerSatc.jpeg"
-          alt="First slide"
+          <img
+            className="d-block w-100"
+            src="images/bannerSatc.jpeg"
+            alt="First slide"
           
-        />
-      </Carousel.Item>
+          />
+        </Carousel.Item>
 
-      <Carousel.Item>
-        <img
+        <Carousel.Item>
+         <img
           className="d-block w-100"
           src="images/bannerSatc.jpeg"
           alt="First slide"
           
-        />
-      </Carousel.Item>
-    </Carousel>
+          />
+        </Carousel.Item>
+      </Carousel>
+    </main>
   );
 };
 
