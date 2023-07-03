@@ -10,11 +10,11 @@ const Banner = () => {
   }
 
   return (
-    <main className="bg-gray">
-      <Carousel className="border-t-2 border-solid border-blue-600" style={{ width: "30vw"}} activeIndex={index} onSelect={handleSelect}>
+    <main className="flex bg-gray2 justify-center p-2 h-[270px] w-screen">
+      <Carousel className="border-t-2 border-solid w-[630px]" activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
           <img
-           className="d-block w-100"
+           className="d-block w-screen"
             src="images/bannerSatc.jpeg"
             alt="First slide"
           
@@ -23,7 +23,7 @@ const Banner = () => {
 
       <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-screen"
             src="images/bannerSatc.jpeg"
             alt="First slide"
           
@@ -32,7 +32,7 @@ const Banner = () => {
 
         <Carousel.Item>
          <img
-          className="d-block w-100"
+          className="d-block w-screen"
           src="images/bannerSatc.jpeg"
           alt="First slide"
           

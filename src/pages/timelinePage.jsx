@@ -27,9 +27,9 @@ export default function TimelinePage () {
   };
   return (
     <main className="bg-white h-fit w-screen">
-      <Container className="bg-slate-200" fluid>
+      <Container fluid>
         <Row>
-          <Form className="flex border-t-2 border-solid border-bluesatc3 justify-center p-3">
+          <Form className="flex border-t-2 border-solid justify-center mt-4 p-3">
             <InputGroup className="w-1/3">
               <DropdownButton
                 variant="outline-secondary"
@@ -55,7 +55,7 @@ export default function TimelinePage () {
           </div>COMENTÁRIO JSX */}  
         </Row>
         <Row>
-          <VerticalTimeline className="mt-3 line-black">
+          <VerticalTimeline className="mt-3" lineColor="#000000">
           <div className="timeline">
             {timelineElements.map((element) => element)}
             <TimelineItem/>

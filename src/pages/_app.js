@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
     <>
       <div>
         <Header />
-        <div className="flex bg-white justify-center">
+        <div>
         <Banner />
         </div>
         <Component {...pageProps} />

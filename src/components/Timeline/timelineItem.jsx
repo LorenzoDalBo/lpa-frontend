@@ -5,10 +5,10 @@ const TimelineItem = () => {
   return (
     <VerticalTimelineElement
       className={`vertical-timeline-element--work`}
-      contentStyle={{ background: "rgb(33, 150, 243)", color: "#0a0a0a" }}
-      contentArrowStyle={{ borderRight: "7px solid", color: "#0c0a09" }}
+      contentStyle={{ background: "#60a5fa", opacity: "50", color: "#000000" }}
+      contentArrowStyle={{ borderRight: "7px solid", color: "#000000" }}
       date="2011 - present"
-      iconStyle={{ background: "rgb(33, 150, 243)", color: "#3b0764" }}
+      iconStyle={{ background: "#0070e0", opacity: "50", color: "#000000" }}
     >
       <h3 className="vertical-timeline-element-title">Creative Director</h3>
       <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>

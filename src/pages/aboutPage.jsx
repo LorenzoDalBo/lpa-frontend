@@ -1,45 +1,48 @@
 import React from "react";
 import { Card, CardGroup, Col, Container, Row } from "react-bootstrap";
+import CardAbout from "@/components/Cards/CardAbout";
+import CardAbout2 from "@/components/Cards/CardAbout2";
 
 const AboutPage = () => {
   return (
-    <main className="bg-slate-200 py-4">
-      <Container className="bg-slate-200">
-        <Row>
-          <Col className="flex justify-center">
-            <CardGroup className="w-1/2">
-              <Card>
-                <Card.Img src="about-img2.jpeg"/>
-                <Card.Body>
-                  <Card.Title>Titulo card 1</Card.Title>
-                  <Card.Text>texto card 1</Card.Text>
-                </Card.Body>
-              </Card>
-            </CardGroup>
-          </Col>
-          <Col className="text-blue-500 flex flex-col justify-center">
-            <h2 className="text-green-500 text-3xl">Foda 2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore adipisci, eligendi reiciendis quaerat ducimus beatae officia assumenda ipsa at velit nihil totam dicta sit! Aliquam eum suscipit minus temporibus eos!</p>
-          </Col>
-        </Row>
-        <Row>
-          <Col className="text-blue-500 flex flex-col justify-center">
-            <h2 className=" text-green-500 text-3xl">Foda</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur nemo vero dolorum animi dicta officia quod quibusdam pariatur tempora? Beatae itaque placeat labore pariatur culpa optio error doloremque voluptate aliquid?</p>
-          </Col>
-          <Col className="flex justify-center">
-            <CardGroup className="w-1/2">
-              <Card>
-                <Card.Img src="/about-logo.jpeg"/>
-                <Card.Body>
-                  <Card.Title>Titulo card 2</Card.Title>
-                  <Card.Text>texto card 2</Card.Text>
-                </Card.Body>
-              </Card>
-            </CardGroup>
-          </Col>
-        </Row>
-      </Container>
+    <main className="bg-white py-4">
+      <h1 className="mt-4 text-2xl font-inter text-bluesatc1 text-center">
+        <strong>Conheça nossos orientadores:</strong>
+      </h1>
+      <div className="mt-20">
+        <Container className="bg-white">
+          <Row>
+            <Col className="flex justify-center">
+            <CardAbout></CardAbout>
+            </Col>
+            <Col className="text-black flex flex-col justify-center">
+              <div className="bg-bluesatc4 rounded-xl p-3 h-32 w-[600px] text-justify">
+                <h2 className="text-black text-3xl">
+                  <strong>LABTEC</strong>
+                </h2>
+                <p className="text-black">
+                  Laboratório de pesquisa e desenvolvimento da UNISATC.
+                </p>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="text-black flex flex-col justify-center">
+              <div className="bg-bluesatc4  rounded-xl p-3 h-32 w-[600px] text-justify mt-6">
+                <h2 className="text-black text-3xl">
+                  <strong>CURSOS</strong>
+                </h2>
+                <p className="text-black">
+                  O Laboratório engloba duas engenharias: Software e Computação.
+                </p>
+              </div>
+            </Col>
+            <Col className="flex justify-center">
+            <CardAbout2></CardAbout2>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </main>
   );
 };

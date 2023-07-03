@@ -34,7 +34,7 @@ export default function Home() {
         </h1>
       </div>
       <div className="pl-8 flex gap-2">
-        <div className=" p-3 d-flex ml-3 mt-10 w-100 h-72">
+        <div className=" p-3 d-flex ml-20 mt-10 w-100 h-72">
           <img
             className="h-[250px] w-[250px] rounded-xl shadow-2xl"
             src="/images/hometest.jpg"
@@ -60,13 +60,17 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <h1 className="text-center justify-center items-center text-2xl font-inter text-bluesatc1 mt-24">
-        <strong>Conheça nossos principais projetos</strong>
-      </h1>
-      <div className="flex justify-around h-fit mt-16 p-6">
-        <CardBaseHome />
-        <CardBaseHome />
-        <CardBaseHome />
+      <div className="p-4">
+        <div className="bg-opacity-30 bg-bluesatc4 h-[650px] w-[1400px] mt-20 ml-36 rounded-3xl">
+          <h1 className="text-center justify-center items-center text-2xl font-inter text-bluesatc1 p-10">
+            <strong>Conheça nossos principais projetos</strong>
+          </h1>
+          <div className="flex justify-around h-fit p-6">
+            <CardBaseHome />
+            <CardBaseHome />
+            <CardBaseHome />
+          </div>
+        </div>
       </div>
     </main>
   );
