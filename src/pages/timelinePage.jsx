@@ -18,9 +18,11 @@ const TimelinePage = () => {
   const [timelineElements, setTimelineElements] = useState([]);
 
   const handleAddElement = () => {
+    
+    
     setTimelineElements((prevElements) => [
       ...prevElements,
-      <TimelineItem key={prevElements.length} />,
+      <TimelineItem  key={prevElements.length} />,
     ]);
   };
   return (
