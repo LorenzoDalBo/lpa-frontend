@@ -6,7 +6,7 @@ export default function CardAbout2 () {
       <Card className="w-[20rem] bg-white shadow-xl shadow-bluesatc4">
         <Card.Img variant="top" src="images/Anderson.jpg" />
         <Card.Body>
-          <Card.Title className='flex justify-center'>Coordenador</Card.Title>
+          <Card.Title className='flex justify-center'>Coordenador Geral</Card.Title>
           <Card.Text className='text-center'>
             Anderson Rodrigo Farias
           </Card.Text> 

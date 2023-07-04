@@ -41,7 +41,7 @@ export default function Home() {
           ></img>
           <p className="pl-4 w-50 ml-2 font-inter text-justify text-bluesatc2 text-lg">
             A linha do tempo permite que seja visualizado todas as atividades
-            que envolvem o curso de engenharia de Software. Para cada evento
+            que envolvem o curso de engenharia de Software e Computação. Para cada evento
             podemos ter detalhes como fotos, vídeos e anexos dos eventos
             ocorridos envolvendo os acadêmicos do Engenharia de Software.
           </p>
