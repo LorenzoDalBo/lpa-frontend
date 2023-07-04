@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const Button = ({ onClick }) => {
+const Button1 = ({ onClick }) => {
   return (
     <button
       className="bg-bluesatc1 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-3"
@@ -12,4 +12,4 @@ const Button = ({ onClick }) => {
   );
 };
 
-export default Button;
+export default Button1;
