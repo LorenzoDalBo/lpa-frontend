@@ -1,10 +1,25 @@
 import Button from 'react-bootstrap/Button';
-import Modal2 from '../Projetos/modal2';
 import React, { useState } from 'react';
 import { Card, Modal } from "react-bootstrap";
 
 
-export default function Card2 () {
+
+
+  
+  const Card2 = ({ newsItem }) => {
+
+    const { titulo, descricao, academico, orientador, data } = newsItem || {}; 
+    const [showModal, setShowModal] = useState(false);
+  
+    const toggleModal = () => {
+      setShowModal(!showModal);
+    };
+  
+    if (!newsItem) {
+  
+      return null; 
+    }
+  
   return (
     <main>
     <div>
@@ -52,3 +67,5 @@ export default function Card2 () {
       </main>
   );
 }
+
+export default Card2;
