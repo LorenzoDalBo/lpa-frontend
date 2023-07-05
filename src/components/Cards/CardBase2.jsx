@@ -1,6 +1,5 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Modal2 from '../Projetos/modal2';
 
 export default function Card2 () {
   return (
@@ -12,7 +11,6 @@ export default function Card2 () {
           Projeto feito pela engenharia de software
         </Card.Text>
         <Button className="bg-bluesatc3 mt-2 ml-24" variant="primary">
-          <Modal2></Modal2>Ler mais
         </Button>
       </Card.Body>
     </Card>
