@@ -1,30 +1,27 @@
 import Modal from "@/components/Projetos/Modal";
 import React, {useState} from "react";
 import TimelineItem from "@/components/Timeline/timelineItem";
-import {
-  Button,
-  Container,
-  Dropdown,
-  DropdownButton,
-  Form,
-  InputGroup,
-  Row,
-} from "react-bootstrap";
+import {Button, Container, Dropdown, DropdownButton, Form, InputGroup, Row} from "react-bootstrap";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-export default function TimelinePage () {
-  
-  {/*const [openModal, setOpenModal] = useState(false) COMENTÁRIO JSX */}
+const TimelinePage = () => {
+
+  const [cidadeFiltrada, setCidadeFiltrada] = useState('');
+
   const [timelineElements, setTimelineElements] = useState([]);
-  
-  function handleAddElement () {
-   {/*  setOpenModal (true)COMENTÁRIO JSX */}
+
+  const handleAddElement = () => {
+    
+    
     setTimelineElements((prevElements) => [
       ...prevElements,
-      <TimelineItem key={prevElements.length} />,
+      <TimelineItem  key={prevElements.length} />,
     ]);
   };
+
+
+
   return (
     <main className="bg-white h-fit w-screen">
       <Container className="bg-slate-200" fluid>
@@ -69,3 +66,5 @@ export default function TimelinePage () {
     </main>
   );
 };
+
+export default TimelinePage;

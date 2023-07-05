@@ -9,4 +9,4 @@ const BannerItem = () => {
   )
 }
 
-export default BannerItem
+export default BannerItem;
