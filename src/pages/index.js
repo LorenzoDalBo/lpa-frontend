@@ -4,16 +4,16 @@ import IframePage from "@/components/Incorporação/inc";
 export default function Home() {
   return (
     <main className="bg-white h-fit">
-      <div className="mt-0 p-1 text-center">
-        <h1 className="mt-4 text-2xl font-inter text-bluesatc1">
-          <strong>
-            BEM-VINDOS À PLATAFORMA DE PROJETOS LABTEC! É BOM TER VOCÊ POR AQUI!
-          </strong>
-        </h1>
-        <p className="mt-3 font-inter text-xl text-bluesatc2">
-          O LabTec é nossa plataforma de desenvolvimento de projetos dos cursos
-          de Engenharia de Software e Engenharia da Computação do{" "}
-          <a href="https://www.google.com/maps/place/SATC+-+Educação,+Tecnologia+e+Inovação/@-28.7025207,-49.4080067,17z/data=!3m1!4b1!4m6!3m5!1s0x95218252afb9fcaf:0x1bb8a5bef9a85c0e!8m2!3d-28.7025207!4d-49.4054264!16s%2Fg%2F11g9swk2dt?entry=ttu">
+        <div className="mt-0 p-1 text-center">
+          <h1 className="mt-4 text-2xl font-inter text-bluesatc1">
+            <strong>
+              BEM VINDOS A PLATAFORMA DE PROJETOS DA ENGENHARIA DE SOFTWARE! É
+              BOM TER VOCÊ POR AQUI!
+            </strong>
+          </h1>
+          <p className="mt-3 font-inter text-xl text-bluesatc2">
+            O Lupa é uma plataforma de desenvolvimento de projetos do curso de
+            Engenharia de Software do <a href="https://www.google.com/maps/place/SATC+-+Educação,+Tecnologia+e+Inovação/@-28.7025207,-49.4080067,17z/data=!3m1!4b1!4m6!3m5!1s0x95218252afb9fcaf:0x1bb8a5bef9a85c0e!8m2!3d-28.7025207!4d-49.4054264!16s%2Fg%2F11g9swk2dt?entry=ttu">
             Centro Universitário SATC localizado no campus da instituição em
             Criciúma - Santa Catarina.
           </a>

@@ -1,20 +1,54 @@
 import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import Modal2 from '../Projetos/modal2';
+import React, { useState } from 'react';
+import { Card, Modal } from "react-bootstrap";
+
 
 export default function Card2 () {
   return (
-    <Card className="w-[20rem] bg-white shadow-xl shadow-bluesatc4 mt-10">
-      <Card.Img variant="top" src="images/hometest2.png" />
-      <Card.Body>
-        <Card.Title className='flex justify-center'>Título</Card.Title>
-        <Card.Text>
-          Projeto feito pela engenharia de software
-        </Card.Text>
-        <Button className="bg-bluesatc3 mt-2 ml-24" variant="primary">
-          <Modal2></Modal2>Ler mais
-        </Button>
-      </Card.Body>
-    </Card>
+    <main>
+    <div>
+      <Card className="w-[18rem] h-[480px] shadow-xl p-3 mb-5 shadow-bluesatc1 rounded">
+        <Card.Img variant="top" src="images/hometest2.png" />
+        <Card.Body>
+          <div>
+          <Card.Title className="text-black text-truncate" title={titulo}>
+            {titulo}
+          </Card.Title>
+          </div>
+          <p className="text-black text-truncate">Academico: {academico}</p>
+          <p className="text-black mt-2 gap-2 text-truncate">Orientador: {orientador}</p>
+          <div className="text-black">
+          <div className="flex mt-2">Ano: {data}</div>
+              <div className='flex justify-center'>
+              <Button className="bg-bluesatc3 mt-2 flex" variant="primary" onClick={toggleModal}>
+                Leia mais
+              </Button>
+              </div> 
+          </div>
+        </Card.Body>
+      </Card>
+
+      <Modal show={showModal} onHide={toggleModal}>
+        <Modal.Header closeButton>
+          <Modal.Title className="text-black">{titulo}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="text-black">
+          <div>
+          <div> {descricao}</div>
+          <div className='font-bold'>Academico: {academico}</div>
+          <div className='font-bold'>Orientador: {orientador}</div>
+          </div> 
+        </Modal.Body>
+        <Modal.Footer>
+          
+          <Button className="text-black" variant="secondary" onClick={toggleModal}>
+            Fechar
+          </Button>
+          
+        </Modal.Footer>
+      </Modal>
+      </div>
+      </main>
   );
 }
