@@ -1,11 +1,9 @@
 import Modal from "@/components/Projetos/Modal";
 import TimelineItem from "@/components/Timeline/timelineItem";
-import {Button, Container, Dropdown, DropdownButton, Form, InputGroup, Row} from "react-bootstrap";
 import React, { useState, useEffect } from "react";
-import { Container, Dropdown, DropdownButton, Form, InputGroup, Row, Pagination } from "react-bootstrap";
+import { Container, Dropdown, DropdownButton, Button, Form, InputGroup, Row, Pagination } from "react-bootstrap";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import TimelineItem from "@/components/Timeline/timelineItem";
 import { times } from "@/styles/times";
 
 
@@ -109,6 +107,7 @@ const TimelinePage = () => {
     </main>
   );
 };
+}
 
 
 export default TimelinePage;
