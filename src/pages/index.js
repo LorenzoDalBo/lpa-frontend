@@ -1,10 +1,11 @@
 import CardBaseHome from "@/components/Cards/CardBaseHome";
 import IframePage from "@/components/Incorporação/inc";
 import { Button } from "react-bootstrap";
-
+import Banner from "@/components/Banner/banner";
 export default function Home() {
   return (
-    <main className="bg-white h-fit">
+    <main className="bg-gray1 h-fit w-screen -mr-6">
+      <Banner/>
       <div className="mt-0 p-1 text-center">
         <h1 className="mt-4 text-2xl font-inter text-bluesatc1">
           <strong>
@@ -39,33 +40,36 @@ export default function Home() {
         </div>
       </div>
       <div className="pl-8 flex gap-2">
-        <div className=" p-3 d-flex ml-20 mt-10 w-100 h-72">
+        <div className=" p-3 d-flex mt-10 w-100 h-72">
           <img
-            className="h-[265px] w-[265px] rounded-2xl shadow-2xl"
+            className="h-[300px] w-[300px] rounded-2xl shadow-2xl"
             src="/images/timelinelupa.svg"
           ></img>
-          <p className="pl-4 w-50 ml-2 font-inter text-justify text-bluesatc2 text-lg">
-            A linha do tempo permite que seja visualizado, de forma geral, todas
+          <p className="pl-4 w-82 ml-2 mr-6 font-inter text-justify text-bluesatc2 text-lg">
+            A linha do tempo permite uma visualização geral de todas
             as atividades que envolvem o curso de engenharia de Software e
             Computação. Para cada evento aparece uma breve descrição do projeto,
             sua data de início e término. Além de poder ser redirecionado para a
             aba projetos referente ao visualizado na linha do tempo, onde
-            encontram-se informações mais detalhadas.
+            encontram-se informações mais detalhadas. <br/>
+            <Button className="rounded-lg bg-bluesatc4 bg-opacity-30 text-black h-[40px] w-[150px] mt-3">
+              <a href="http://localhost:3000/aboutPage">Saiba mais</a>
+            </Button>
           </p>
-          <Button className="rounded-lg bg-bluesatc4 bg-opacity-30 text-black h-[40px] w-[150px]">
-            Saiba mais
-          </Button>
         </div>
         <div className="p-3 d-flex mt-10 w-100 h-72">
           <img
-            className="h-[265px] w-[265px] rounded-xl shadow-2xl"
+            className="h-[300px] w-[300px] rounded-xl shadow-2xl"
             src="/images/projectlupa.svg"
           ></img>
-          <p className="pl-4 w-50 ml-2 text-justify font-inter text-bluesatc2 text-lg">
+          <p className="pl-4 w-82 ml-2 mr-6 text-justify font-inter text-bluesatc2 text-lg">
             Os projetos permitem uma visualização com maior detalhe, contam com
             informações de: Autores do projeto, Orientadores, Detalhes escritos
             do projeto, fotos, vídeos e anexos dos eventos ocorridos envolvendo
-            os acadêmicos das Engenharias de Software e Computação.
+            os acadêmicos das Engenharias de Software e Computação. <br/>
+            <Button className="rounded-lg bg-bluesatc4 bg-opacity-30 text-black h-[40px] w-[150px] mt-16">
+              <a href="http://localhost:3000/aboutPage">Saiba mais</a>
+            </Button>
           </p>
         </div>
       </div>

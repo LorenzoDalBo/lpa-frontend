@@ -1,4 +1,4 @@
-import Modal from "@/components/Projetos/Modal";
+
 import React, {useState} from "react";
 import TimelineItem from "@/components/Timeline/timelineItem";
 import {
@@ -26,7 +26,7 @@ export default function TimelinePage () {
     ]);
   };
   return (
-    <main className="bg-white h-fit w-screen">
+    <main className="bg-gray1 h-fit w-screen">
       <Container fluid>
         <Row>
           <Form className="flex border-t-2 border-solid justify-center mt-4 p-3">
@@ -45,14 +45,7 @@ export default function TimelinePage () {
                 placeholder="Filtrar projetos . . ."
               ></Form.Control>
             </InputGroup>
-          </Form>
-          {/* <div className="flex justify-center gap-5 mt-8">
-            <Button className="bg-bluesatc1" onClick={handleAddElement}>Adicionar Projeto</Button>
-            <Button className="bg-red ">Remover Projeto</Button> 
-          </div>
-          <div>
-          <Modal isOpen={openModal} setModalClosed={() => setOpenModal(!openModal)}/> 
-          </div>COMENTÁRIO JSX */}  
+          </Form>  
         </Row>
         <Row>
           <VerticalTimeline className="mt-3" lineColor="#000000">

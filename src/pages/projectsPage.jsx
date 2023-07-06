@@ -24,7 +24,7 @@ export default function ProjectsPage() {
   };
 
   return (
-    <main className="bg-white p-3">
+    <main className="bg-gray1 p-3">
       <div className="gap-5">
         <div className="flex justify-center gap-5 mt-8">
           <Button className="bg-bluesatc1" onClick={handleButtonClick}>Adicionar Projeto</Button>  
