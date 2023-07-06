@@ -26,7 +26,7 @@ export default function TimelinePage () {
     ]);
   };
   return (
-    <main className="bg-gray1 h-fit w-screen">
+    <main className="bg-gray0 h-fit w-screen">
       <Container fluid>
         <Row>
           <Form className="flex border-t-2 border-solid justify-center mt-4 p-3">

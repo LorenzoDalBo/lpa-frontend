@@ -7,7 +7,7 @@ import CardAboutLab2 from "@/components/Cards/CardAboutLab2";
 
 const AboutPage = () => {
   return (
-    <main className="bg-gray1 py-4">
+    <main className="bg-gray0 py-4">
       <div className="flex justify-center">
         <div className="flex justify-center items-end rounded-2xl bg-bluesatc4 bg-opacity-80 h-[60px] w-[600px] m-3 p-3">
           <h1 className="mt-4 text-2xl text-black">
@@ -16,7 +16,7 @@ const AboutPage = () => {
         </div>
       </div>
       <div className="mt-20">
-        <Container className="bg-gray1">
+        <Container className="bg-gray0">
           <Row>
             <Col className="flex justify-center">
               <CardAbout></CardAbout>
@@ -76,7 +76,7 @@ const AboutPage = () => {
         </div>
       </div>
       <div className="mt-20">
-        <Container className="bg-gray1">
+        <Container className="bg-gray0">
           <Row>
             <Col className="flex justify-center">
               <CardAboutLab />
@@ -123,7 +123,7 @@ const AboutPage = () => {
         </div>
       </div>
       <div className="ml-[545px] mt-20">
-        <Container className="bg-gray1">
+        <Container className="bg-gray0">
           <Row>
             <div className="bg-bluesatc4 bg-opacity-50 rounded-xl p-3 h-36 w-[600px] text-justify">
               <h2 className="text-black text-3xl">

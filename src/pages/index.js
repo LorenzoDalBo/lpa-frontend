@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 import Banner from "@/components/Banner/banner";
 export default function Home() {
   return (
-    <main className="bg-gray1 h-fit w-screen -mr-6">
+    <main className="bg-gray0 h-fit w-screen -mr-6">
       <Banner/>
       <div className="mt-0 p-1 text-center">
         <h1 className="mt-4 text-2xl font-inter text-bluesatc1">

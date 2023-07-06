@@ -1,4 +1,4 @@
-export default function Working() {
+export default function WorkingIcon() {
   return (
     <div class="gearbox">
       <div class="overlay"></div>

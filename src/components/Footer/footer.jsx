@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray0 h-fit w-screen flex justify-center items-center gap-40">
+    <footer className="bg-white h-fit w-screen flex justify-center items-center gap-40">
       <a href="https://unisatc.com.br/">
         <img className="h-28" src="images/bannerSatcsemfundo.png"></img>
       </a>
