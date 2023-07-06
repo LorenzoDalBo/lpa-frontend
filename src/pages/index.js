@@ -1,5 +1,6 @@
 import CardBaseHome from "@/components/Cards/CardBaseHome";
 import IframePage from "@/components/Incorporação/inc";
+import { Button } from "react-bootstrap";
 
 export default function Home() {
   return (
@@ -19,54 +20,66 @@ export default function Home() {
           </a>
         </p>
       </div>
-      <div className="flex justify-around mt-24">
-        <h1
-          className={`text-left text-2xl font-inter text-bluesatc1
-          `}
-        >
-          <strong>Linha do Tempo</strong>
-        </h1>
-        <h1
-          className={`text-right text-2xl font-inter text-bluesatc1
-          `}
-        >
-          <strong>Laboratório De Projetos</strong>
-        </h1>
+      <div className="flex justify-around mt-36">
+        <div className="bg-bluesatc4 bg-opacity-30 h-[40px] w-[200px] rounded-xl">
+          <h1
+            className={`text-center justify-center items-center text-2xl font-inter text-bluesatc1
+            `}
+          >
+            <strong>Linha do Tempo</strong>
+          </h1>
+        </div>
+        <div className="bg-bluesatc4 bg-opacity-30 h-[40px] w-[200px] rounded-xl">
+          <h1
+            className={`text-center justify-center items-center text-2xl font-inter text-bluesatc1
+           `}
+          >
+            <strong>Projetos</strong>
+          </h1>
+        </div>
       </div>
       <div className="pl-8 flex gap-2">
-        <div className=" p-3 d-flex ml-3 mt-10 w-100 h-72">
+        <div className=" p-3 d-flex ml-20 mt-10 w-100 h-72">
           <img
-            className="h-[250px] w-[250px] rounded-xl shadow-2xl"
-            src="/images/hometest.jpg"
+            className="h-[265px] w-[265px] rounded-2xl shadow-2xl"
+            src="/images/timelinelupa.svg"
           ></img>
           <p className="pl-4 w-50 ml-2 font-inter text-justify text-bluesatc2 text-lg">
-            A linha do tempo permite que seja visualizado todas as atividades
-            que envolvem o curso de engenharia de Software. Para cada evento
-            podemos ter detalhes como fotos, vídeos e anexos dos eventos
-            ocorridos envolvendo os acadêmicos do Engenharia de Software.
+            A linha do tempo permite que seja visualizado, de forma geral, todas
+            as atividades que envolvem o curso de engenharia de Software e
+            Computação. Para cada evento aparece uma breve descrição do projeto,
+            sua data de início e término. Além de poder ser redirecionado para a
+            aba projetos referente ao visualizado na linha do tempo, onde
+            encontram-se informações mais detalhadas.
           </p>
+          <Button className="rounded-lg bg-bluesatc4 bg-opacity-30 text-black h-[40px] w-[150px]">
+            Saiba mais
+          </Button>
         </div>
         <div className="p-3 d-flex mt-10 w-100 h-72">
           <img
-            className="h-[250px] w-[250px] rounded-xl shadow-2xl"
-            src="/images/hometest3.png"
+            className="h-[265px] w-[265px] rounded-xl shadow-2xl"
+            src="/images/projectlupa.svg"
           ></img>
           <p className="pl-4 w-50 ml-2 text-justify font-inter text-bluesatc2 text-lg">
-            O Laboratório possui dois objetivos: acelerar o processo de
-            colocação dos acadêmicos no mercado, buscando desenvolver projetos
-            que resolvam problemas reais e, subsidiar as empresas por meio de
-            pesquisa ou de desenvolvimento de serviços de acordo com as suas
-            necessidades.
+            Os projetos permitem uma visualização com maior detalhe, contam com
+            informações de: Autores do projeto, Orientadores, Detalhes escritos
+            do projeto, fotos, vídeos e anexos dos eventos ocorridos envolvendo
+            os acadêmicos das Engenharias de Software e Computação.
           </p>
         </div>
       </div>
-      <h1 className="text-center justify-center items-center text-2xl font-inter text-bluesatc1 mt-24">
-        <strong>Conheça nossos principais projetos</strong>
-      </h1>
-      <div className="flex justify-around h-fit mt-16 p-6">
-        <CardBaseHome />
-        <CardBaseHome />
-        <CardBaseHome />
+      <div className="p-4 mt-32">
+        <div className="bg-opacity-30 bg-bluesatc4 h-[650px] w-[1400px] ml-36 rounded-3xl">
+          <h1 className="text-center justify-center items-center text-3xl font-inter text-bluesatc1 p-10">
+            <strong>Conheça nossos principais projetos</strong>
+          </h1>
+          <div className="flex justify-around h-fit p-6">
+            <CardBaseHome />
+            <CardBaseHome />
+            <CardBaseHome />
+          </div>
+        </div>
       </div>
     </main>
   );

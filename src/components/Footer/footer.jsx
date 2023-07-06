@@ -2,9 +2,16 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className='bg-white h-fit w-screen flex justify-center items-center gap-40 p-4 bg-bluesatc1'>
-      <img className='h-20' src="images/bannerSatc.jpeg"></img>
-      <img className='h-28' src= "images/LogoSoftware.jfif"></img>
-    </footer> 
-  )
+    <footer className="bg-gray2 mt-2 h-fit w-screen flex justify-center items-center gap-40">
+      <a href="https://unisatc.com.br/">
+        <img className="h-28" src="images/bannerSatcsemfundo.png"></img>
+      </a>
+      <a href="https://unisatc.com.br/graduacao/engenharia-de-software/">
+        <img className="h-36" src="images/LogoSoftwareSemfundo.png"></img>
+      </a>
+      <a href="https://unisatc.com.br/graduacao/engenharia-de-computacao/">
+        <img className="h-32" src="images/logocomputação.png"></img>
+      </a>
+    </footer>
+  );
 }

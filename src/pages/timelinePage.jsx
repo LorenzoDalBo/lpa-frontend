@@ -50,44 +50,41 @@ const TimelinePage = () => {
 
   return (
     <main className="bg-white h-fit w-screen">
-      <Container className="bg-slate-200" fluid>
-        <Form className="justify-center flex">
-          <InputGroup className="w-1/3 center justify-center">
-            <DropdownButton variant="outline-secondary" title="Filtrar:" id="input-group-dropdown-1">
-              <Dropdown.Item onClick={() => handleFilterYear("")}>Todos</Dropdown.Item>
-              <Dropdown.Item onClick={() => handleFilterYear("Janeiro")}>Janeiro</Dropdown.Item>
-              <Dropdown.Item onClick={() => handleFilterYear("Fevereiro")}>Fevereiro</Dropdown.Item>
-              <Dropdown.Item onClick={() => handleFilterYear("Março")}>Março</Dropdown.Item>
-              <Dropdown.Item onClick={() => handleFilterYear("Abril")}>Abril</Dropdown.Item>
-              <Dropdown.Item onClick={() => handleFilterYear("Maio")}>Maio</Dropdown.Item>
-              <Dropdown.Item onClick={() => handleFilterYear("Junho")}>Junho</Dropdown.Item>
-              <Dropdown.Item onClick={() => handleFilterYear("Julho")}>Julho</Dropdown.Item>
-              <Dropdown.Item onClick={() => handleFilterYear("Agosto")}>Agosto</Dropdown.Item>
-              <Dropdown.Item onClick={() => handleFilterYear("Setembro")}>Setembro</Dropdown.Item>
-              <Dropdown.Item onClick={() => handleFilterYear("Outubro")}>Outubro</Dropdown.Item>
-              <Dropdown.Item onClick={() => handleFilterYear("Novembro")}>Novembro</Dropdown.Item>
-              <Dropdown.Item onClick={() => handleFilterYear("Dezembro")}>Dezembro</Dropdown.Item>
-            </DropdownButton>
-          </InputGroup>
-          <InputGroup className="w-1/3 center justify-center">
-            <DropdownButton variant="outline-secondary" title="Filtrar por Ano:" id="input-group-dropdown-2">
-              <Dropdown.Item onClick={() => handleFilterYear("")}>Todos</Dropdown.Item>
-              {Array.from(new Set(timelineElements.map((element) => element.ano))).map((year) => (
-                <Dropdown.Item key={year} onClick={() => handleFilterYear(year)}>
-                  {year}
-                </Dropdown.Item>
-              ))}
-            </DropdownButton>
-          </InputGroup>
-        </Form>
-        
+      <Container fluid>
         <Row>
-          <VerticalTimeline className="" lineColor="#000000">
-            <div className="timeline">
-              {currentItems.map((element, index) => (
-                <TimelineItem key={index} timesItem={element} />
-              ))}
-            </div>
+          <Form className="flex border-t-2 border-solid justify-center mt-4 p-3">
+            <InputGroup className="w-1/3">
+              <DropdownButton
+                variant="outline-secondary"
+                title="Filtrar por ano"
+                id="input-group-dropdown-1"
+              >
+                <Dropdown.Item href="#">Action</Dropdown.Item>
+                <Dropdown.Item href="#">Another action</Dropdown.Item>
+                <Dropdown.Item href="#">Something else here</Dropdown.Item>
+              </DropdownButton>
+              <Form.Control
+                size="lg"
+                placeholder="Filtrar projetos . . ."
+              ></Form.Control>
+            </InputGroup>
+          </Form>
+          {/* <div className="flex justify-center gap-5 mt-8">
+            <Button className="bg-bluesatc1" onClick={handleAddElement}>Adicionar Projeto</Button>
+            <Button className="bg-red ">Remover Projeto</Button> 
+          </div>
+          <div>
+          <Modal isOpen={openModal} setModalClosed={() => setOpenModal(!openModal)}/> 
+          </div>COMENTÁRIO JSX */}  
+        </Row>
+        <Row>
+          <VerticalTimeline className="mt-3" lineColor="#000000">
+          <div className="timeline">
+            {timelineElements.map((element) => element)}
+            <TimelineItem/>
+            <TimelineItem/>
+            <TimelineItem/>
+          </div>
           </VerticalTimeline>
         </Row>
       </Container>

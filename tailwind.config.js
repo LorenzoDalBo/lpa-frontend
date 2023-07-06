@@ -11,6 +11,8 @@ module.exports = {
       'bluesatc2': '#0044a2',
       'bluesatc3': '#035bbf',
       'bluesatc4': '#0070e0',
+      'bluetime' : '#2563eb',
+      'black' : '#000000',
       'gray': '#6b7280',
       'gray3': '#4b5563',
       'gray2': '#d1d5db',

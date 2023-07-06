@@ -1,11 +1,6 @@
-import Button from 'react-bootstrap/Button';
-import React, { useState } from 'react';
-import { Card, Modal } from "react-bootstrap";
 
-
-
-
-  
+import { useState } from 'react';
+import { Card, Button, Modal } from 'react-bootstrap';
   const Card2 = ({ newsItem }) => {
 
     const { titulo, descricao, academico, orientador, data } = newsItem || {}; 
@@ -56,11 +51,11 @@ import { Card, Modal } from "react-bootstrap";
           </div> 
         </Modal.Body>
         <Modal.Footer>
-          
+
           <Button className="text-black" variant="secondary" onClick={toggleModal}>
             Fechar
           </Button>
-          
+
         </Modal.Footer>
       </Modal>
       </div>
