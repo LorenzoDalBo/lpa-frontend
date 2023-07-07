@@ -7,7 +7,7 @@ import CardAboutLab2 from "@/components/Cards/CardAboutLab2";
 
 const AboutPage = () => {
   return (
-    <main className="bg-white py-4">
+    <main className="bg-gray0 py-4">
       <div className="flex justify-center">
         <div className="flex justify-center items-end rounded-2xl bg-bluesatc4 bg-opacity-80 h-[60px] w-[600px] m-3 p-3">
           <h1 className="mt-4 text-2xl text-black">
@@ -16,7 +16,7 @@ const AboutPage = () => {
         </div>
       </div>
       <div className="mt-20">
-        <Container className="bg-white">
+        <Container className="bg-gray0">
           <Row>
             <Col className="flex justify-center">
               <CardAbout></CardAbout>
@@ -76,7 +76,7 @@ const AboutPage = () => {
         </div>
       </div>
       <div className="mt-20">
-        <Container className="bg-white">
+        <Container className="bg-gray0">
           <Row>
             <Col className="flex justify-center">
               <CardAboutLab />
@@ -112,61 +112,6 @@ const AboutPage = () => {
             <Col className="flex justify-center">
               <CardAboutLab2/>
             </Col>
-          </Row>
-        </Container>
-      </div>
-      <div className="flex justify-center mt-28">
-        <div className="flex justify-center items-end rounded-2xl bg-bluesatc4 bg-opacity-80 h-[60px] w-[600px] m-3 p-3">
-          <h1 className="mt-4 text-2xl text-black">
-            <strong>Desenvolvedores do projeto:</strong>
-          </h1>
-        </div>
-      </div>
-      <div className="ml-[545px] mt-20">
-        <Container className="bg-white">
-          <Row>
-            <div className="bg-bluesatc4 bg-opacity-50 rounded-xl p-3 h-36 w-[600px] text-justify">
-              <h2 className="text-black text-3xl">
-                <strong>Eduardo Ribarski Scalco</strong>
-              </h2>
-              <p className="text-black">Desenvolvedor Full-stack do projeto.</p>
-              <p className="mt-2 text-black">
-                <strong>Acompanhe seu trabalho:</strong> <br/>
-                <a href="https://www.linkedin.com/in/eduardo-ribarski-a691b8250/">
-                  Linkedn -
-                  https://www.linkedin.com/in/eduardo-ribarski-a691b8250/
-                </a>
-              </p>
-            </div>
-          </Row>
-          <Row>
-            <div className="bg-bluesatc4 bg-opacity-50 rounded-xl p-3 h-36 w-[600px] text-justify mt-6">
-              <h2 className="text-black text-3xl">
-                <strong>Jean Charles Guichard Guichard</strong>
-              </h2>
-              <p className="text-black">Desenvolvedor Full-stack do projeto.</p>
-              <p className="mt-2 text-black">
-                <strong>Acompanhe seu trabalho:</strong> <br />
-                <a href="https://www.linkedin.com/in/jean-charles-g-guichard/">
-                  Linkedn - https://www.linkedin.com/in/jean-charles-g-guichard/
-                </a>
-              </p>
-            </div>
-          </Row>
-          <Row>
-            <div className="bg-bluesatc4 bg-opacity-50 rounded-xl p-3 h-36 w-[600px] text-justify mt-6">
-              <h2 className="text-black text-3xl">
-                <strong>Lorenzo Trevizol Dal Bó</strong>
-              </h2>
-              <p className="text-black">Desenvolvedor Full-stack do projeto.</p>
-              <p className="mt-2 text-black">
-                <strong>Acompanhe seu trabalho:</strong> <br />
-                <a href="https://www.linkedin.com/in/lorenzo-dal-b%C3%B3-7710b4239/">
-                  Linkedn -
-                  https://www.linkedin.com/in/lorenzo-dal-b%C3%B3-7710b4239/
-                </a>
-              </p>
-            </div>
           </Row>
         </Container>
       </div>

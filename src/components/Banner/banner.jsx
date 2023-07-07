@@ -10,7 +10,7 @@ const Banner = () => {
   }
 
   return (
-    <main className="flex bg-gray2 justify-center p-2 h-[270px] w-screen">
+    <main className="flex bg-white justify-center p-2 h-[270px]">
       <Carousel className="border-t-2 border-solid w-[630px]" activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
           <img

@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
-import Card2 from '@/components/Cards/CardBase2';
-import { news } from '@/styles/datas';
-import { Dropdown, DropdownButton, Form, InputGroup, Pagination } from 'react-bootstrap';
+import React, { useState } from "react";
+import Card2 from "@/components/Cards/CardBase2";
+import { news } from "@/styles/datas";
+import {
+  Dropdown,
+  DropdownButton,
+  Form,
+  InputGroup,
+  Pagination,
+} from "react-bootstrap";
 
 export default function ProjectsPage() {
-  const [filterYear, setFilterYear] = useState('');
+  const [filterYear, setFilterYear] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
 
@@ -21,7 +27,10 @@ export default function ProjectsPage() {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentNewsItems = filteredNewsItems.slice(indexOfFirstItem, indexOfLastItem);
+  const currentNewsItems = filteredNewsItems.slice(
+    indexOfFirstItem,
+    indexOfLastItem
+  );
 
   const totalPages = Math.ceil(filteredNewsItems.length / itemsPerPage);
 
@@ -38,13 +47,27 @@ export default function ProjectsPage() {
             title="Filtrar por ano"
             id="input-group-dropdown-1"
           >
-            <Dropdown.Item onClick={() => handleFilterYear('')}>Todos</Dropdown.Item>
-            <Dropdown.Item onClick={() => handleFilterYear('2017')}>2017</Dropdown.Item>
-            <Dropdown.Item onClick={() => handleFilterYear('2018')}>2018</Dropdown.Item>
-            <Dropdown.Item onClick={() => handleFilterYear('2019')}>2019</Dropdown.Item>
-            <Dropdown.Item onClick={() => handleFilterYear('2020')}>2020</Dropdown.Item>
-            <Dropdown.Item onClick={() => handleFilterYear('2021')}>2021</Dropdown.Item>
-            <Dropdown.Item onClick={() => handleFilterYear('2022')}>2022</Dropdown.Item>
+            <Dropdown.Item onClick={() => handleFilterYear("")}>
+              Todos
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => handleFilterYear("2017")}>
+              2017
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => handleFilterYear("2018")}>
+              2018
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => handleFilterYear("2019")}>
+              2019
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => handleFilterYear("2020")}>
+              2020
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => handleFilterYear("2021")}>
+              2021
+            </Dropdown.Item>
+            <Dropdown.Item onClick={() => handleFilterYear("2022")}>
+              2022
+            </Dropdown.Item>
           </DropdownButton>
         </InputGroup>
       </Form>
@@ -53,10 +76,9 @@ export default function ProjectsPage() {
         {currentNewsItems.map((newsItem) => (
           <Card2 key={newsItem.id} newsItem={newsItem} />
         ))}
-        <Card2 newsItem={news['']} />
+        <Card2 newsItem={news[""]} />
       </div>
-
-      <Pagination className="justify-content-center mt-4">
+      <Pagination className="justify-content-center mt-4 p-3">
         <Pagination.Prev
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}

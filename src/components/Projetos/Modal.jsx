@@ -1,4 +1,5 @@
 import { Button } from "react-bootstrap";
+
 export default function Modal({ isOpen, setModalClosed }) {
   if (isOpen) {
     return (
