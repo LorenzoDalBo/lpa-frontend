@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 import Banner from "@/components/Banner/banner";
 export default function Home() {
   return (
-    <main className="bg-gray0 h-fit w-screen -mr-6">
+    <main className="bg-gray0 h-fit w-screen mr-6">
       <Banner />
       <div className="mt-0 p-1 text-center">
         <h1 className="mt-4 text-2xl font-inter text-bluesatc1">
@@ -12,16 +12,13 @@ export default function Home() {
             BEM-VINDOS À PLATAFORMA DE PROJETOS LABTEC! É BOM TER VOCÊ POR AQUI!
           </strong>
         </h1>
-        <p className="mt-3 font-inter text-xl text-bluesatc2">
-          O LabTec é nossa plataforma de desenvolvimento de projetos dos cursos
-          de Engenharia de Software e Engenharia da Computação do{" "}
-          <a href="https://www.google.com/maps/place/SATC+-+Educação,+Tecnologia+e+Inovação/@-28.7025207,-49.4080067,17z/data=!3m1!4b1!4m6!3m5!1s0x95218252afb9fcaf:0x1bb8a5bef9a85c0e!8m2!3d-28.7025207!4d-49.4054264!16s%2Fg%2F11g9swk2dt?entry=ttu">
-            Centro Universitário SATC localizado no campus da instituição em
-            Criciúma - Santa Catarina.
+        <p className=" flex mt-3 font-inter text-xl mr-3 text-bluesatc2">
+        <a href="https://www.google.com/maps/place/SATC+-+Educação,+Tecnologia+e+Inovação/@-28.7025207,-49.4080067,17z/data=!3m1!4b1!4m6!3m5!1s0x95218252afb9fcaf:0x1bb8a5bef9a85c0e!8m2!3d-28.7025207!4d-49.4054264!16s%2Fg%2F11g9swk2dt?entry=ttu">
+          O LabTec é nossa plataforma de desenvolvimento de projetos dos cursos de Engenharia de Software e Engenharia da Computação do Centro Universitário SATC localizado no campus da instituição em Criciúma - Santa Catarina.
           </a>
         </p>
       </div>
-      <div className="flex justify-around mt-36">
+      <div className="flex h-fit w-screen justify-around">
         <div className="bg-bluesatc4 bg-opacity-30 h-[40px] w-[200px] rounded-xl">
           <h1
             className={`text-center justify-center items-center text-2xl font-inter text-bluesatc1
@@ -73,10 +70,10 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="p-4 mt-32">
-        <div className="bg-opacity-30 bg-bluesatc4 h-[650px] w-[1400px] ml-36 rounded-3xl">
+      <div className="flex p-4 mt-32">
+        <div className="bg-opacity-30 bg-bluesatc4 h-[650px] w-[1400px] ml- rounded-3xl">
           <h1 className="text-center justify-center items-center text-3xl font-inter text-bluesatc1 p-10">
-            <strong>Conheça nossos principais projetos</strong>
+            <strong className="">Conheça nossos principais projetos</strong>
           </h1>
           <div className="flex justify-around h-fit p-6">
             <CardBaseHome />

@@ -35,7 +35,6 @@ const TimelinePage = () => {
     setCurrentPage(1);
   };
 
-  const selectedPanel = ({ selectedPanel }) => {};
 
   const filteredTimelineElements = timelineElements.filter((element) => {
     if (selectedMonth === "" && selectedYear === "") {
@@ -77,7 +76,7 @@ const TimelinePage = () => {
           <InputGroup className="w-1/3 center justify-center">
             <DropdownButton
               variant="outline-secondary"
-              title="Filtrar:"
+              title="Filtrar por mês:"
               id="input-group-dropdown-1"
             >
               <Dropdown.Item onClick={() => handleFilterMonth("")}>
@@ -129,7 +128,7 @@ const TimelinePage = () => {
           <InputGroup className="w-1/3 center justify-center">
             <DropdownButton
               variant="outline-secondary"
-              title="Filtrar por Ano:"
+              title="Filtrar por ano:"
               id="input-group-dropdown-2"
             >
               <Dropdown.Item onClick={() => handleFilterYear("")}>

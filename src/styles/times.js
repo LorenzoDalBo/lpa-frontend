@@ -8,7 +8,7 @@ export const times = [
         ano: "2017",
 
     },
-
+    
     {
 
         titulo: "Inicio projeto: Tratamento de Efluentes",
