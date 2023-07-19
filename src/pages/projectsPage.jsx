@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import Modal from "@/components/Projetos/Modal";
 import Card2 from "@/components/Cards/CardBase2";
+import Button from "react-bootstrap";
 import { news } from "@/styles/datas";
 import {
   Dropdown,
@@ -10,11 +12,16 @@ import {
 } from "react-bootstrap";
 
 export default function ProjectsPage() {
+  const [openModal, setOpenModal] = useState(false);
   const [filterYear, setFilterYear] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
 
   const newsItems = news.slice(0, 14);
+
+  const handleButtonClick = () => {
+    setOpenModal(true);
+  };
 
   const handleFilterYear = (year) => {
     setFilterYear(year);
@@ -71,7 +78,20 @@ export default function ProjectsPage() {
           </DropdownButton>
         </InputGroup>
       </Form>
-
+      {/*<div className="gap-5">
+        <div className="flex justify-center gap-5 mt-8">
+          <Button className="bg-bluesatc1" onClick={handleButtonClick}>
+            Adicionar Projeto
+          </Button>
+          <Button className="bg-red ">Remover Projeto</Button>
+        </div>
+        <div>
+          <Modal
+            isOpen={openModal}
+            setModalClosed={() => setOpenModal(!openModal)}
+          ></Modal>
+        </div>
+      </div> */}
       <div className="grid grid-cols-3 gap-4 mt-8 p-1 justify-items-center">
         {currentNewsItems.map((newsItem) => (
           <Card2 key={newsItem.id} newsItem={newsItem} />
@@ -99,4 +119,4 @@ export default function ProjectsPage() {
       </Pagination>
     </main>
   );
-}
+} 
