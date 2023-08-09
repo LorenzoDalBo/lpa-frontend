@@ -1,8 +1,8 @@
 import { Button } from "react-bootstrap";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fas } from "@fortawesome/free-solid-svg-icons";
+{/* import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-library.add(fas);
+import { fas } from "@fortawesome/free-solid-svg-icons";
+library.add(fas);*/}
 
 export default function Autenticação() {
   return (
@@ -60,7 +60,7 @@ export default function Autenticação() {
             type="submit"
             className="border-2 border-bluesatc2 bg-bluesatc2 text-white py-1 w-full rounded-md"
           >
-            <FontAwesomeIcon icon="fa-solid fa-right-to-bracket" /> Login
+            <i class="fa-solid fa-right-to-bracket"></i> Login
           </Button>
         </div>
       </div>

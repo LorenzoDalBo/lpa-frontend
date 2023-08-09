@@ -1,8 +1,8 @@
-import { Button } from "react-bootstrap";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fas } from "@fortawesome/free-solid-svg-icons";
+import { Button } from "react-bootstrap/Button";
+{/* import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-library.add(fas);
+import { fas } from "@fortawesome/free-solid-svg-icons";
+library.add(fas);*/}
 
 export default function Login() {
   return (
@@ -26,9 +26,8 @@ export default function Login() {
           </div>
           <div className="mt-4">
             <Button className="border-2 border-bluesatc2 bg-bluesatc2 text-white py-1 w-full rounded-md">
-              <FontAwesomeIcon icon="fa-solid fa-right-to-bracket" />{" "}
               <a href="http://localhost:3000/AuthenticationPage">
-                Ir para o Login
+                <i class="fa-solid fa-right-to-bracket"></i>Ir para o Login
               </a>
             </Button>
           </div>
@@ -39,7 +38,7 @@ export default function Login() {
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
           ></link>
           <h1 className="text-3xl block text-center">
-            <FontAwesomeIcon icon="fa-solid fa-people-group" /> <br />
+          <i class="fa-solid fa-people-group"></i> <br />
             Sou estudante ou visitante
           </h1>
           <hr className="mt-3" />
@@ -51,7 +50,7 @@ export default function Login() {
           </div>
           <div className="mt-4">
             <Button className="border-2 border-bluesatc2 bg-bluesatc2 text-white py-1 w-full rounded-md">
-              <a href="http://localhost:3000/">Apreciar o site</a>
+              <a href="http://localhost:3000/projectsPage">Conhecer o site</a>
             </Button>
           </div>
         </div>
